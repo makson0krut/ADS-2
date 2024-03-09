@@ -8,22 +8,18 @@ double pown(double value, uint16_t n) {
     return 1;
   }
   double result = 1.0;
-  for (uint16_t i = 1; i <= n; i++) {
+  for (uint64_t i = 1; i <= n; i++) {
     result *= value;
   }
   return result;
 }
 
 uint64_t fact(uint16_t n) {
-  if (n == 0) {
-    return 1;
-  } else {
-    uint16_t result = 1;
-    for (uint16_t i = 1; i <= n; i++) {
-      result *= i;
-    }
-    return result;
+  uint64_t result = 1;
+  for (uint64_t = 1; i <= n; i++) {
+    result *= i;
   }
+  return result;
 }
 
 double calcItem(double x, uint16_t n) {
